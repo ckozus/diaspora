@@ -1,5 +1,5 @@
 production:
-  after_rails:
-    - source: /.cloud66/files/diaspora.yml
-      destination: <%= ENV['RAILS_STACK_PATH'] %>/config/diaspora.yml
-      target: rails
+  # after_rails:
+  #   - source: /.cloud66/files/diaspora.yml
+  #     destination: <%= ENV['RAILS_STACK_PATH'] %>/config/diaspora.yml
+  #     target: rails
