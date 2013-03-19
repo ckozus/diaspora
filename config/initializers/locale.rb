@@ -26,6 +26,8 @@ end
 # Use the railtie configuration option to ensure overiding devise.
 Diaspora::Application.config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
 I18n.default_locale = DEFAULT_LANGUAGE
+puts "DEFAULT_LANGUAGE: #{DEFAULT_LANGUAGE.inspect}"
+puts "AVAILABLE_LANGUAGE_CODES: #{AVAILABLE_LANGUAGE_CODES.inspect}"
 
 I18n::Backend::Simple.send(:include, I18n::Backend::InterpolationFallbacks)
 I18n::Backend::Simple.send(:include, I18n::Backend::Fallbacks)
